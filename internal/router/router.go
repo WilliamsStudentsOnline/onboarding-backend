@@ -8,17 +8,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var db = make(map[string]string)
-
 func SetupRouter() *gin.Engine {
 	// Disable Console Color
 	// gin.DisableConsoleColor()
 	r := gin.Default()
 
 	// Ping test
-	r.GET("/ping", func(c *gin.Context) {
-		c.String(http.StatusOK, "pong")
-	})
+	r.GET("/ping", ping)
 
 	apiV1Group := r.Group("/api/v1")
 
@@ -43,4 +39,15 @@ func SetupRouter() *gin.Engine {
 	admin.SetupRouter(authorized)
 
 	return r
+}
+
+// ping godoc
+// @Summary ping example
+// @Schemes
+// @Description sanity check, return "Hello World"
+// @Success 200 {string} Hello World
+// @Router /ping [get]
+func ping(c *gin.Context) {
+	// TODO: Part 1: change the returned text to "Hello World!"
+	c.String(http.StatusOK, "pong\n")
 }

@@ -9,10 +9,10 @@ func SetupRouter(r gin.IRouter) {
 	   Zm9vOmJhcg== is base64("foo:bar")
 
 		curl -X POST \
-	  	http://localhost:8080/api/v1/admin/add \
+	  	http://localhost:8080/api/v1/admin/edit \
 	  	-H 'authorization: Basic Zm9vOmJhcg==' \
 	  	-H 'content-type: application/json' \
-	  	-d '{"value":"bar"}'
+	  	-d '{"user": "Ye", "color":"bar"}'
 	*/
-	r.POST("add", addUser)
+	r.POST("edit", editUser)
 }
