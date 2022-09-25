@@ -3,9 +3,12 @@ package router
 import (
 	"net/http"
 
+	_ "github.com/WilliamsStudentsOnline/onboarding-backend/docs"
 	"github.com/WilliamsStudentsOnline/onboarding-backend/internal/admin"
 	"github.com/WilliamsStudentsOnline/onboarding-backend/internal/users"
 	"github.com/gin-gonic/gin"
+	swaggerfiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 func SetupRouter() *gin.Engine {
@@ -37,6 +40,8 @@ func SetupRouter() *gin.Engine {
 		}),
 	)
 	admin.SetupRouter(authorized)
+
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 
 	return r
 }
