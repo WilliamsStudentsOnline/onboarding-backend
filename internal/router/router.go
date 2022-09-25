@@ -41,11 +41,13 @@ func SetupRouter() *gin.Engine {
 	)
 	admin.SetupRouter(authorized)
 
+	// swagger API docs router: /swagger/*
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 
 	return r
 }
 
+// TODO: Part 1: change the returned text to "Hello World!"
 // ping godoc
 // @Summary ping example
 // @Schemes
@@ -53,6 +55,5 @@ func SetupRouter() *gin.Engine {
 // @Success 200 {string} Hello World
 // @Router /ping [get]
 func ping(c *gin.Context) {
-	// TODO: Part 1: change the returned text to "Hello World!"
 	c.String(http.StatusOK, "pong\n")
 }
