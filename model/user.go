@@ -2,7 +2,7 @@ package model
 
 type UserInfo struct {
 	User  string `json:"user" example:"Ye"`
-	Color string `json:"value" example:"Blue"`
+	Color string `json:"color" example:"Blue"`
 }
 
 type EditResponse struct {

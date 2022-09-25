@@ -122,13 +122,13 @@ const docTemplate = `{
         "model.UserInfo": {
             "type": "object",
             "properties": {
+                "color": {
+                    "type": "string",
+                    "example": "Blue"
+                },
                 "user": {
                     "type": "string",
                     "example": "Ye"
-                },
-                "value": {
-                    "type": "string",
-                    "example": "Blue"
                 }
             }
         }

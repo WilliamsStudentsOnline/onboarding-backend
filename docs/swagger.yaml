@@ -7,11 +7,11 @@ definitions:
     type: object
   model.UserInfo:
     properties:
+      color:
+        example: Blue
+        type: string
       user:
         example: Ye
-        type: string
-      value:
-        example: Blue
         type: string
     type: object
 host: localhost:8080
