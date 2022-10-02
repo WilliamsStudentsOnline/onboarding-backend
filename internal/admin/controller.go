@@ -1,7 +1,6 @@
 package admin
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/WilliamsStudentsOnline/onboarding-backend/model"
@@ -20,10 +19,6 @@ import (
 // @Failure	500	{object}	model.EditResponse
 // @Router /api/v1/admin/edit/ [POST]
 func editUser(c *gin.Context) {
-	user := c.MustGet(gin.AuthUserKey).(string)
-	// TODO: Delete the line below when done (used to evade unused variable errors)
-	fmt.Printf("%v\n", user)
-
 	// Parse JSON
 	var inputJson model.UserInfo
 
@@ -31,9 +26,9 @@ func editUser(c *gin.Context) {
 		// TODO: Make a call to the Insert function of the database and store the return as "err"
 		var err error
 		if err != nil {
-			// TODO: Respond with a StatusOK and a EditResponse JSON
+			c.JSON(http.StatusInternalServerError, model.EditResponse{Status: err.Error()})
 			return
 		}
-		c.JSON(http.StatusInternalServerError, model.EditResponse{Status: err.Error()})
+		// TODO: Respond with a StatusOK and a EditResponse JSON
 	}
 }
