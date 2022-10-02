@@ -32,6 +32,7 @@ func editUser(c *gin.Context) {
 		var err error
 		if err != nil {
 			// TODO: Respond with a StatusOK and a EditResponse JSON
+			c.JSON(http.StatusOK, inputJson)
 			return
 		}
 		c.JSON(http.StatusInternalServerError, model.EditResponse{Status: err.Error()})

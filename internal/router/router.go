@@ -55,5 +55,5 @@ func SetupRouter() *gin.Engine {
 // @Success 200 {string} Hello World
 // @Router /ping [get]
 func ping(c *gin.Context) {
-	c.String(http.StatusOK, "pong\n")
+	c.String(http.StatusOK, "Hello World!\n")
 }

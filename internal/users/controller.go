@@ -28,6 +28,9 @@ func showUser(c *gin.Context) {
 	if err != nil {
 		c.JSON(http.StatusNotFound, model.UserInfo{User: user, Color: "Unknown"})
 		return
+	} else {
+		c.JSON(http.StatusOK, model.UserInfo{User: user, Color: "DO LATER"})
+		return
 	}
 
 	// TODO: If there is no error, repond with a correct JSON that looks like
