@@ -65,10 +65,7 @@ curl -X POST \
   http://localhost:8080/api/v1/admin/edit \
   -H 'authorization: Basic Zm9vOmJhcg==' \
   -H 'content-type: application/json' \
-  -d '{
-        "user":"Ye",
-        "color":"Blue",
-      }'
+  -d '{"user":"Ye","color":"Blue"}'
 ```
 it is supposed to add the corresponding entry to the database.
 
@@ -78,8 +75,7 @@ Note that `Zm9vOmJhcg==` is `base64("foo:bar")` and we are using [Basic Auth](ht
 
 Now that we can add users, we want a way to query our database for a given user's favorite color. We want to make a request like so
 ```console
-curl -X GET \
-        http://localhost:8080/api/v1/user/Ye
+curl -X GET http://localhost:8080/api/v1/user/Ye
 ```
 and get the information back in a JSON format like
 
