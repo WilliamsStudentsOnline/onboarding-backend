@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// TODO: finish this function according to description
+// TODO: Part 3: finish this function according to description
 // showUser godoc
 // @Summary lists the value associated with user from fakedatabase
 // @Description Parse the input path param name, query it in fakedatabase, and then write the responses based on whether user exists in database
