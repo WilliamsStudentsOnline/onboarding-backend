@@ -7,7 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// TODO: finish this function according to description
+// TODO 2: finish this function according to description
 // showUser godoc
 // @Summary edits the currently logged in user in fakedatabse
 // @Description Parse the input body json, add/edit it in fakedatabase, and then write the responses
