@@ -2,10 +2,8 @@ package users
 
 import (
 	"fmt"
-	"net/http"
 
 	"github.com/WilliamsStudentsOnline/onboarding-backend/internal/fakedatabase"
-	"github.com/WilliamsStudentsOnline/onboarding-backend/model"
 	"github.com/gin-gonic/gin"
 )
 
@@ -23,12 +21,13 @@ func showUser(c *gin.Context) {
 	value, err := fakedatabase.Query(user)
 
 	// TODO: Delete the line below when done (used to evade unused variable errors)
-	fmt.Printf("%v\n", value)
+	fmt.Printf("%v%v\n", value, err)
 
-	if err != nil {
-		c.JSON(http.StatusNotFound, model.UserInfo{User: user, Color: "Unknown"})
-		return
-	}
+	// TODO: If there is an error, repond with a StatusNotFound and a correct JSON that looks like
+	// {
+	// 	  "user": "Ye",
+	//    "color": "Unknown"
+	// }
 
 	// TODO: If there is no error, repond with a correct JSON that looks like
 	// {
