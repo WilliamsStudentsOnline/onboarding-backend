@@ -23,6 +23,8 @@ and to quit, use the keyboard shortcut `control + C`
 
 ## RESTful API
 
+## TODO: this is not???? necessarily covered in the slides unless we are doing slide presentation during onboarding
+## nonetheless i think we should def include something about rest here
 Covered in our slideshow. 
 
 ## Gin
@@ -70,6 +72,7 @@ curl -X POST \
 it is supposed to add the corresponding entry to the database.
 
 Note that `Zm9vOmJhcg==` is `base64("foo:bar")` and we are using [Basic Auth](https://en.wikipedia.org/wiki/Basic_access_authentication) to authenticate users to this endpoint.
+### TODO: make an actual task here
 
 ### Part 3
 
@@ -96,6 +99,7 @@ To generate the documentation, run:
 ```console
 make swag
 ```
+### NOTE YOU MAKE HAVE TO INSTALL SWAG
 And to see your documentation, start up the server and navigate to
 [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html).
 From here, you can actually test out your endpoints right there in the browser! Play around with it, and try to make it execute the same endpoints as the ones you ran using `curl`.
