@@ -14,8 +14,8 @@ What you need:
 You can download VSCode [here](https://code.visualstudio.com/)
 
 If you are on Mac I would highly recommend installing Homebrew (a package manager)
-- Copy the code on the [Brew Homepage](https://brew.sh/) to a terminal window
-- Now you have brew installed and can get packages by typing `brew [package name]`
+- Copy the code on the [Brew Homepage](https://brew.sh/) to a terminal
+- Now you have brew installed and can get packages by typing `brew install [package name]`
 
 If you don't have Git installed:
 - If you have brew installed type `brew install git` in a terminal
