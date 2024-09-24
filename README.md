@@ -1,8 +1,37 @@
 # WSO Backend Onboarding
 
+## About this Repository
+
+A Williams student began developing a user management system for WSO, but never finished it. Your task is to complete the backend implementation by filling in the missing code. Follow the instructions to learn how to complete the project.
+
+## Setting Up Your Dev Environment
+
 What you need:
-- Golang
 - A code editor (e.g. VSCode or GoLand)
+- Git
+- Go
+
+You can download VSCode [here](https://code.visualstudio.com/)
+
+If you are on Mac I would highly recommend installing Homebrew (a package manager)
+- Copy the code on the [Brew Homepage](https://brew.sh/) to a terminal window
+- Now you have brew installed and can get packages by typing `brew [package name]`
+
+If you don't have Git installed:
+- If you have brew installed type `brew install git` in a terminal
+- If you don't follow the download instructions [here](https://git-scm.com/downloads) based on your OS
+
+If you don't have Go installed
+- If you have brew installed type `brew install go` in a terminal
+- If you don't you can download Go [here](https://go.dev/dl/) (make sure to download the **Installer** for the OS and architecture of your computer)
+
+Now you are ready for onboarding!
+
+## Clone and Run the Server
+To clone the repo navigate into the directory of your choice and run:
+```console
+git clone https://github.com/NathanVosburg/onboarding-backend/blob/main/README.md
+```
 
 To start the server, simply run:
 ```console
@@ -23,6 +52,8 @@ and to quit, use the keyboard shortcut `control + C`
 
 ## RESTful API
 
+## TODO: this is not???? necessarily covered in the slides unless we are doing slide presentation during onboarding
+## nonetheless i think we should def include something about rest here
 Covered in our slideshow. 
 
 ## Gin
@@ -70,6 +101,7 @@ curl -X POST \
 it is supposed to add the corresponding entry to the database.
 
 Note that `Zm9vOmJhcg==` is `base64("foo:bar")` and we are using [Basic Auth](https://en.wikipedia.org/wiki/Basic_access_authentication) to authenticate users to this endpoint.
+### TODO: make an actual task here
 
 ### Part 3
 
@@ -96,6 +128,7 @@ To generate the documentation, run:
 ```console
 make swag
 ```
+### NOTE YOU MAKE HAVE TO INSTALL SWAG
 And to see your documentation, start up the server and navigate to
 [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html).
 From here, you can actually test out your endpoints right there in the browser! Play around with it, and try to make it execute the same endpoints as the ones you ran using `curl`.
