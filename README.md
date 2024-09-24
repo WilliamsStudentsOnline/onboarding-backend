@@ -1,9 +1,15 @@
 # WSO Backend Onboarding
 
-## Getting your dev environment set up
+## About this Repository
+
+A Williams student began developing a user management system for WSO, but never finished it. Your task is to complete the backend implementation by filling in the missing code. Follow the instructions to learn how to complete the project.
+
+## Setting Up Your Dev Environment
+
 What you need:
-- Golang
 - A code editor (e.g. VSCode or GoLand)
+- Git
+- Go
 
 You can download VSCode [here](https://code.visualstudio.com/)
 
@@ -11,7 +17,7 @@ If you are on Mac I would highly recommend installing Homebrew (a package manage
 - Copy the code on the [Brew Homepage](https://brew.sh/) to a terminal window
 - Now you have brew installed and can get packages by typing `brew [package name]`
 
-If you don't have git installed:
+If you don't have Git installed:
 - If you have brew installed type `brew install git` in a terminal
 - If you don't follow the download instructions [here](https://git-scm.com/downloads) based on your OS
 
@@ -19,8 +25,9 @@ If you don't have Go installed
 - If you have brew installed type `brew install go` in a terminal
 - If you don't you can download Go [here](https://go.dev/dl/) (make sure to download the **Installer** for the OS and architecture of your computer)
 
-Now you are ready for onboarding! I would recommend to wait until onboarding starts before cloning the repo but feel free to continue if you are familiar with git.
+Now you are ready for onboarding!
 
+## Clone and Run the Server
 To clone the repo navigate into the directory of your choice and run:
 ```console
 git clone https://github.com/NathanVosburg/onboarding-backend/blob/main/README.md
