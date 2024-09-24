@@ -1,8 +1,25 @@
 # WSO Backend Onboarding
 
+## Getting your dev environment set up
 What you need:
 - Golang
 - A code editor (e.g. VSCode or GoLand)
+
+You can download VSCode [here](https://code.visualstudio.com/)
+
+If you are on Mac I would highly recommend installing Homebrew (a package manager)
+- Copy the code on the [Brew Homepage](https://brew.sh/) to a terminal window
+- Now you have brew installed and can get packages by typing `brew [package name]`
+
+If you don't have git installed:
+- If you have brew installed type `brew install git` in a terminal
+- If you don't follow the download instructions [here](https://git-scm.com/downloads) based on your OS
+
+If you don't have Go installed
+- If you have brew installed type `brew install go` in a terminal
+- If you don't you can download Go [here](https://go.dev/dl/) (make sure to download the **Installer** for the OS and architecture of your computer)
+
+Now you are ready for onboarding! I would recommend to wait before cloning the repo until onboarding starts as it may be updated before then.
 
 To start the server, simply run:
 ```console
