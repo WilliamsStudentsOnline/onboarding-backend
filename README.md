@@ -19,7 +19,7 @@ If you don't have Go installed
 - If you have brew installed type `brew install go` in a terminal
 - If you don't you can download Go [here](https://go.dev/dl/) (make sure to download the **Installer** for the OS and architecture of your computer)
 
-Now you are ready for onboarding! I would recommend to wait until onboarding starts before cloning the repo but feel free to if you are familiar with git.
+Now you are ready for onboarding! I would recommend to wait until onboarding starts before cloning the repo but feel free to continue if you are familiar with git.
 
 To clone the repo navigate into the directory of your choice and run:
 ```console
