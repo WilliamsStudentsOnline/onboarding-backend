@@ -19,7 +19,12 @@ If you don't have Go installed
 - If you have brew installed type `brew install go` in a terminal
 - If you don't you can download Go [here](https://go.dev/dl/) (make sure to download the **Installer** for the OS and architecture of your computer)
 
-Now you are ready for onboarding! I would recommend to wait before cloning the repo until onboarding starts as it may be updated before then.
+Now you are ready for onboarding! I would recommend to wait until onboarding starts before cloning the repo but feel free to if you are familiar with git.
+
+To clone the repo navigate into the directory of your choice and run:
+```console
+git clone https://github.com/NathanVosburg/onboarding-backend/blob/main/README.md
+```
 
 To start the server, simply run:
 ```console
