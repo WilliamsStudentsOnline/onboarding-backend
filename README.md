@@ -30,7 +30,7 @@ Now you are ready for onboarding!
 ## Clone and Run the Server
 To clone the repo navigate into the directory of your choice and run:
 ```console
-git clone https://github.com/NathanVosburg/onboarding-backend/blob/main/README.md
+git clone https://github.com/WilliamsStudentsOnline/onboarding-backend.git
 ```
 
 To start the server, simply run:
