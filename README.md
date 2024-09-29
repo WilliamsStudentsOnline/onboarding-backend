@@ -17,6 +17,11 @@ If you are on Mac I would highly recommend installing Homebrew (a package manage
 - Copy the code on the [Brew Homepage](https://brew.sh/) to a terminal
 - Now you have brew installed and can get packages by typing `brew install [package name]`
 
+If you are on Windows you should install Chocolatey (also a package manager)
+- follow the install direcitons on [install Chocolatey](https://chocolatey.org/install) (make sure open Windows PowerShell as an administratior)
+- Now you have choco installed and can get packages by typing `choco install [package name]`
+- run `choco install make` so you can start the local server
+
 If you don't have Git installed:
 - If you have brew installed type `brew install git` in a terminal
 - If you don't follow the download instructions [here](https://git-scm.com/downloads) based on your OS
