@@ -50,12 +50,6 @@ and to quit, use the keyboard shortcut `control + C`
   - `fakedatabase` This is where our (fake) user database logic is stored.
 - `model`  This stores the defined structs for requests/responses and data models
 
-## RESTful API
-
-## TODO: this is not???? necessarily covered in the slides unless we are doing slide presentation during onboarding
-## nonetheless i think we should def include something about rest here
-Covered in our slideshow. 
-
 ## Gin
 
 Gin is a framework that allows us to build highly efficient servers. It works around the idea of a `gin.Context`. A `context` is a wrapper for a http request instance. It stores all the information received from a request, and all the necessary information to respond to it as well. Every time a request is made, we call one of the functions that takes in a `gin.Context`. That funciton, uses the `context` to respond to the request.
